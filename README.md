@@ -9,4 +9,7 @@ With each page change the history Web API is used to push a new state and change
 The right page is shown according to the URL the user enters in the address bar.
 The website store's sticky notes in the localStorage and then retrieve them in the next visit.
 
+username: monkey
+password: banana
+
 Surge link: http://general-sod.surge.sh
