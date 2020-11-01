@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  background-color: #f2f2f2;
+  background-image: url(/leafs.png);
+  background-size: cover;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.form-group label {
+  display: block;
+}
+
+#sign-in-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-in-page form {
+  display: inline-block;
+  text-align: center;
+}
+
+#sign-in-page label {
+  text-align: left;
+}
+
+#sign-in-page .form-group {
+  margin: 1rem;
+}
+
+#sign-in-page input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 0.2rem;
+}
+
+#sign-in-page button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  border-radius: 0.2rem;
+  background-color: #41403b;
+  color: #f2f2f2;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#forbidden-page {
+    display: flex;
+  justify-content: center;
+}
+
+#forbidden-page h2 {
+  margin: 15rem;
+}
+
+#notes-page header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;;
+  color: #41403b;
+  
+}
+
+#notes-page #sign-out-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#notes-page #sub-header {
+  padding: 1rem;
+}
+
+#notes-page #add-note-button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 0.2rem;
+  background-color: #41403b;
+  color: #f2f2f2;
+}
+
+#notes-page #note-board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 1rem 1rem 0;
+}
+
+#notes-page .note-container {
+  width: 20rem;
+  margin: 1rem 0 0 1rem;
+  background-color: #ffff88;
+}
+
+#notes-page #note-text {
+  width: 100%;
+  height: 100%;
+  background-color: #ffff88;
+  border-style: none;
+  font-size: 1.2rem;
+  resize: none;
+}
+
+#notes-page #note-text:focus {
+  outline: none;
+}
+
+#notes-page .note-container:hover .delete-note-button {
+  visibility: visible;
+}
+
+#notes-page .note-content {
+  height: 16rem;
+  padding: 1rem;
+}
+
+#notes-page .note-footer {
+  text-align: right;
+  padding: 1rem;
+  border-style: none;
+}
+
+#notes-page .note-button {
+  font-size: 1rem;
+  margin-left: 0.7rem;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 0.2rem;
+  background-color: #41403b;
+  color: #f2f2f2;
+}
+
+#notes-page #note-container-template {
+  display: none;
+}
+
+#notes-page .delete-note-button {
+  visibility: hidden;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 0.2rem;
+  background-color: #41403b;
+  color: #f2f2f2;
+}

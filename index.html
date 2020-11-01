@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="sign-in-page" class="page hidden">
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" type="text">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password">
+      </div>
+      <button>Sign In</button>
+    </form>
+  </div>
+
+  <div id="notes-page" class="page hidden">
+    <header>
+      <h2>Notes</h2>
+      <a id="sign-out-link" href="/">Sign out</a>
+    </header>
+    <div id="sub-header">
+      <button id="add-note-button" type="button">Add a note</button>
+    </div>
+    <div id="note-board">
+      <div id="add-note-container" class="note-container hidden">
+        <div class="note-content">
+          <textarea id="note-text"></textarea>
+        </div>
+        <div class="note-footer">
+          <button class="note-button" id="cancel-note-button" type="button">Cancel</button>
+          <button class="note-button" id="save-note-button" type="button">Save note</button>
+        </div>
+      </div>
+      <div id="note-container-template" class="note-container">
+        <div class="note-content">
+          <p></p>
+        </div>
+        <div class="note-footer">
+          <button class="delete-note-button" type="button">Discard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="forbidden-page" class="page hidden">
+    <h2 id="already-signed-in-message" class="hidden">You are already signed in.</h2>
+    <h2 id="not-signed-in-message" class="hidden">You must be signed in to view this page. Click <a href="/#/sign-in">here</a> to sign in.</h2>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
